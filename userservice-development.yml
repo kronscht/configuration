@@ -1,1 +1,2 @@
-service.info: dev-mode
+service:
+  info: dev-mode
