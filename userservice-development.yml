@@ -2,7 +2,13 @@ service:
   info: dev-mode
 
 spring:
-datasource:
-  url: jdbc:postgresql://userdatabase:5432/user
-  username: technical
-  password: '{cipher}6e35d48d9e81b7732d662e77c049bc0f408bb8137f4a77abb2c7ae04d14e1efd'
+  datasource:
+    url: jdbc:postgresql://userdatabase:5432/user
+    username: technical
+    password: '{cipher}6e35d48d9e81b7732d662e77c049bc0f408bb8137f4a77abb2c7ae04d14e1efd'
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
