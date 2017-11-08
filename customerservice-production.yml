@@ -1,9 +1,9 @@
 service:
-  info: dev-mode
+  info: prod-mode
 
 spring:
   datasource:
-    url: jdbc:postgresql://userdatabase:5432/user
+    url: jdbc:postgresql://userdatabase:5432/customer
     username: technical
     password: '{cipher}6e35d48d9e81b7732d662e77c049bc0f408bb8137f4a77abb2c7ae04d14e1efd'
   jpa:
